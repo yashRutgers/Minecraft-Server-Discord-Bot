@@ -1,15 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const bot = new Discord.Client();
-client.login('NjkyODU5NTI4MTM5NzY3OTE5.Xn0qvA.fD_U0PGLrLhqT7Cn5-RcKrmKmCM');
+client.login('YOUR DISCORD BOT TOKEN HERE');
 bot.on('ready', () =>{
     console.log('bot online');
     bot.user.setActivity('usage /mc');
 })
 var request = require('request');
 var mcCommand = '/mc'; 
-var mcIP = "23.105.177.174"; 
-var mcPort = "53992"; 
+var mcIP = "SERVER IP HERE"; 
+var mcPort = "SERVER PORT HERE"; 
 client.on('message', message => {
     if (message.content === mcCommand) {
         var url = 'http://mcapi.us/server/status?ip=' + mcIP + '&port=' + mcPort;
